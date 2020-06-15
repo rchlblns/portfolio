@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Formik } from "formik";
 import * as yup from "yup";
-// import axios from "axios";
+import axios from "axios";
 
 
 const schema = yup.object({
@@ -33,13 +33,28 @@ function ContactForm() {
             }}
             validationSchema={schema}
             onSubmit={(values, {setSubmitting, resetForm}) => {
-                setSubmitting(true);
+                // setSubmitting(true);
 
-                setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
-                    resetForm();
-                    setSubmitting(false);
-                }, 500);
+                // setTimeout(() => {
+                //     alert(JSON.stringify(values, null, 2));
+                //     resetForm();
+                //     setSubmitting(false);
+                // }, 500);
+
+                axios({
+                    method: "POST",
+                    url: "http://localhost:3000/contact",
+                    data: values
+                })
+                    .then(response => {
+                        alert("Message sent");
+                        setSubmitting(false);
+                        resetForm();
+                    })
+                    .catch(error => {
+                        alert("Message failed to send")
+                        setSubmitting(false);
+                    })
             }}
         >
             {({
