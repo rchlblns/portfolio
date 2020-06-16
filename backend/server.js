@@ -4,13 +4,19 @@ const bodyParser = require("body-parser");
 const nodeMailer = require("nodemailer");
 const cors = require("cors");
 const dotenv = require("dotenv").config( { path: "../.env"} );
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3030;
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow_origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    next();
+});
 
-let appURL = "http://localhost:3000/contact";
+// let appURL = "http://localhost:3000/contact/send";
 
 const transporter = nodeMailer.createTransport({
     host: "smtp.ethereal.email",
@@ -29,7 +35,12 @@ transporter.verify((error, success) => {
     }
 });
 
-app.post(appURL, (req, res) => {
+//check API status
+app.get("/api", (req, res) => {
+    console.log("API Status: Running");
+});
+
+app.post("/api/send", (req, res) => {
     let firstName = req.body.firstName
     let lastName = req.body.lastName
     let name = `${firstName} ${lastName}`
@@ -44,7 +55,7 @@ app.post(appURL, (req, res) => {
         text: content
     }
 
-    transporter.sendMail(mail, (err,data) => {
+    transporter.sendMail(mail, (err, data) => {
         if (err) {
             res.json({
                 msg: "fail"
