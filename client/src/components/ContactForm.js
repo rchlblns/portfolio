@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import { Formik } from "formik";
 import * as yup from "yup";
 import axios from "axios";
+import SubmitButton from "../components/SubmitButton";
 
 
 const schema = yup.object({
@@ -148,9 +149,9 @@ function ContactForm() {
                             </Form.Control.Feedback>
                         </Form.Group>
 
-                        <Button variant="primary" type="submit" disabled={isSubmitting}>
-                            SUBMIT
-                        </Button>
+                        <SubmitButton 
+                            disabled={isSubmitting}>
+                        </SubmitButton>
                     </Form>
                 )}
         </Formik>
