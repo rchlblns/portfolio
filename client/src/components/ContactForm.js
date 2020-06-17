@@ -5,7 +5,8 @@ import Button from "react-bootstrap/Button";
 import { Formik } from "formik";
 import * as yup from "yup";
 import axios from "axios";
-import SubmitButton from "../components/SubmitButton";
+// import SubmitButton from "../components/SubmitButton";
+import Spinner from "react-bootstrap/Spinner";
 
 
 const schema = yup.object({
@@ -149,9 +150,13 @@ function ContactForm() {
                             </Form.Control.Feedback>
                         </Form.Group>
 
-                        <SubmitButton 
-                            disabled={isSubmitting}>
-                        </SubmitButton>
+                        <Button 
+                            variant="primary"
+                            type="submit"
+                            disabled={isSubmitting}
+                            >
+                                {isSubmitting ? <Spinner as="span" animation="border" variant="light"/> : "SUBMIT"}
+                        </Button>
                     </Form>
                 )}
         </Formik>
