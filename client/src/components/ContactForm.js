@@ -5,8 +5,11 @@ import Button from "react-bootstrap/Button";
 import { Formik } from "formik";
 import * as yup from "yup";
 import axios from "axios";
-// import SubmitButton from "../components/SubmitButton";
 import Spinner from "react-bootstrap/Spinner";
+import { toast, Slide } from "react-toastify";
+import {BsCheck} from "react-icons/bs";
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 const schema = yup.object({
@@ -23,103 +26,113 @@ const schema = yup.object({
         .required("Required"),
 });
 
-function ContactForm() {
+toast.configure();
+
+const ContactForm = () => {
+
     return (
-        <Formik
-            initialValues={{
-                firstName: "",
-                lastName: "",
-                email: "",
-                // subject: "",
-                message: "",
-            }}
-            validationSchema={schema}
-            onSubmit={(values, {setSubmitting, resetForm}) => {
-                // setSubmitting(true);
+            <Formik
+                initialValues={{
+                    firstName: "",
+                    lastName: "",
+                    email: "",
+                    // subject: "",
+                    message: "",
+                }}
+                validationSchema={schema}
+                onSubmit={(values, { setSubmitting, resetForm }) => {
+                    // setSubmitting(true);
 
-                // setTimeout(() => {
-                //     alert(JSON.stringify(values, null, 2));
-                //     resetForm();
-                //     setSubmitting(false);
-                // }, 500);
+                    // setTimeout(() => {
+                    //     alert(JSON.stringify(values, null, 2));
+                    //     resetForm();
+                    //     setSubmitting(false);
+                    // }, 500);
 
-                axios({
-                    method: "POST",
-                    url: "/api/send",
-                    data: values
-                })
-                    .then(response => {
-                        alert("Message sent");
-                        setSubmitting(false);
-                        resetForm();
+                    axios({
+                        method: "POST",
+                        url: "/api/send",
+                        data: values
                     })
-                    .catch(error => {
-                        alert("Message failed to send")
-                        setSubmitting(false);
-                    })
-            }}
-        >
-            {({
-                values,
-                errors,
-                touched,
-                handleBlur,
-                handleChange,
-                handleSubmit,
-                isSubmitting
-            }) => (
-                    <Form noValidate onSubmit={handleSubmit}>
-                        <Form.Row>
-                            <Form.Group as={Col} controlId="formGridFirstName">
-                                <Form.Label>First Name</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    name="firstName"
-                                    value={values.firstName}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    isInvalid={!!errors.firstName && touched.firstName}
-                                    placeholder="John"
-                                />
-                                <Form.Control.Feedback type="invalid">
-                                    {errors.firstName}
-                                </Form.Control.Feedback>
-                            </Form.Group>
+                        .then(response => {
+                            // alert("Message sent");
+                            toast.success("Form submitted.Thanks!", {
+                                position: "bottom-center",
+                                autoClose: 1800,
+                                transition: Slide
+                            });
+                            setSubmitting(false);
+                            resetForm();
+                        })
+                        .catch(error => {
+                            // alert("Message failed to send")
+                            // setStatus("Something went wrong. Please try again.")
+                            setSubmitting(false);
+                        })
+                }}
+            >
+                {({
+                    values,
+                    errors,
+                    touched,
+                    handleBlur,
+                    handleChange,
+                    handleSubmit,
+                    isSubmitting,
+                }) => (
+                    
+                        <Form noValidate onSubmit={handleSubmit}>
+                            <Form.Row>
+                                <Form.Group as={Col} controlId="formGridFirstName">
+                                    <Form.Label>First Name</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        name="firstName"
+                                        value={values.firstName}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        isInvalid={!!errors.firstName && touched.firstName}
+                                        placeholder="John"
+                                    />
+                                    <Form.Control.Feedback type="invalid">
+                                        {errors.firstName}
+                                    </Form.Control.Feedback>
+                                </Form.Group>
 
-                            <Form.Group as={Col} controlId="formGridLastName">
-                                <Form.Label>Last Name</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    name="lastName"
-                                    value={values.lastName}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    isInvalid={!!errors.lastName && touched.lastName}
-                                    placeholder="Doe"
-                                />
-                                <Form.Control.Feedback type="invalid">
-                                    {errors.lastName}
-                                </Form.Control.Feedback>
-                            </Form.Group>
+                                <Form.Group as={Col} controlId="formGridLastName">
+                                    <Form.Label>Last Name</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        name="lastName"
+                                        value={values.lastName}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        isInvalid={!!errors.lastName && touched.lastName}
+                                        placeholder="Doe"
+                                    />
+                                    <Form.Control.Feedback type="invalid">
+                                        {errors.lastName}
+                                    </Form.Control.Feedback>
+                                </Form.Group>
 
-                            <Form.Group as={Col} controlId="formGridEmail">
-                                <Form.Label>Email</Form.Label>
-                                <Form.Control
-                                    type="email"
-                                    name="email"
-                                    value={values.email}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    isInvalid={!!errors.email && touched.email}
-                                    placeholder="example@email.com"
-                                />
-                                <Form.Control.Feedback type="invalid">
-                                    {errors.email}
-                                </Form.Control.Feedback>
-                            </Form.Group>
-                        </Form.Row>
+                                <Form.Group as={Col} controlId="formGridEmail">
+                                    <Form.Label>Email</Form.Label>
+                                    <Form.Control
+                                        type="email"
+                                        name="email"
+                                        value={values.email}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        isInvalid={!!errors.email && touched.email}
+                                        placeholder="example@email.com"
+                                    />
+                                    <Form.Control.Feedback type="invalid">
+                                        {errors.email}
+                                    </Form.Control.Feedback>
+                                </Form.Group>
+                            </Form.Row>
 
-                        {/* <Form.Group controlId="formGridSubject">
+                            {/* <Form.Group controlId="formGridSubject">
                             <Form.Label>Subject</Form.Label>
                             <Form.Control
                                 type="text"
@@ -133,33 +146,34 @@ function ContactForm() {
                             </Form.Control.Feedback>
                         </Form.Group> */}
 
-                        <Form.Group controlId="formGridMessage">
-                            <Form.Label>Message</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                rows="6"
-                                type="text"
-                                name="message"
-                                value={values.message}
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                isInvalid={!!errors.message && touched.message}
-                                placeholder="Enter message here" />
-                            <Form.Control.Feedback type="invalid">
-                                {errors.message}
-                            </Form.Control.Feedback>
-                        </Form.Group>
+                            <Form.Group controlId="formGridMessage">
+                                <Form.Label>Message</Form.Label>
+                                <Form.Control
+                                    as="textarea"
+                                    rows="6"
+                                    type="text"
+                                    name="message"
+                                    value={values.message}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    isInvalid={!!errors.message && touched.message}
+                                    placeholder="Enter message here" />
+                                <Form.Control.Feedback type="invalid">
+                                    {errors.message}
+                                </Form.Control.Feedback>
+                            </Form.Group>
 
-                        <Button 
-                            variant="primary"
-                            type="submit"
-                            disabled={isSubmitting}
+                            <Button
+                                variant="primary"
+                                type="submit"
+                                disabled={isSubmitting}
                             >
-                                {isSubmitting ? <Spinner as="span" animation="border" variant="light"/> : "SUBMIT"}
-                        </Button>
-                    </Form>
-                )}
-        </Formik>
+                                {isSubmitting ? <Spinner as="span" animation="border" variant="light" /> : "SUBMIT"}
+                            </Button>
+                        </Form>
+                       
+                    )}
+            </Formik>
     )
 }
 
