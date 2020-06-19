@@ -13,7 +13,7 @@ function AdventureTime() {
                 <Col>
                     <Image src={require("../assets/images/clickygame.gif")} fluid />
                 </Col>
-                <Col>
+                <Col className="my-auto">
                     <Row>
                         <Col>
                             <p>A memory game where players gain points by NOT clicking on the same picture twice</p>
@@ -26,11 +26,9 @@ function AdventureTime() {
                     </Row>
                     <Row>
                         <Col>
-                            <a target="_blank" rel="noopener noreferrer" href="https://polar-journey-52548.herokuapp.com/">
+                            <a target="_blank" rel="noopener noreferrer" href="https://polar-journey-52548.herokuapp.com/" className="pr-2">
                                 <LiveButton />
-                            </a>
-                        </Col>
-                        <Col>
+                            </a> 
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/rchlblns/clicky-game">
                                 <GithubButton />
                             </a>

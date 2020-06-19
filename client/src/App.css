@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Glacial Indifference";
+    font-style: normal;
+    src: local("Glacial Indifference"), url(./assets/fonts/Glacial_Indifference/GlacialIndifference-Regular.otf) format("opentype");
+}
+
+.container-fluid {
+    padding-left: 0;
+}
+
+h1 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 70px;
+}
+
+.nav-item {
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 20px;
+}
+
+.list-group-item {
+    border: 0;
+}

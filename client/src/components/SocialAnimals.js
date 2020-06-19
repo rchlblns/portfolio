@@ -13,7 +13,7 @@ function SocialAnimals() {
                 <Col>
                     <Image src={require("../assets/images/socialanimals.gif")} fluid />
                 </Col>
-                <Col>
+                <Col className="my-auto">
                     <Row>
                         <Col>
                             <p>Social Animals is a part social networking/part search service application for animal lovers. It aims to reduce the amount of animals that are abandoned or surrendered by providing a support network of animal related information and resources.</p>
@@ -26,11 +26,9 @@ function SocialAnimals() {
                     </Row>
                     <Row>
                         <Col>
-                            <a target="_blank" rel="noopener noreferrer" href="https://project-3-aristocats.herokuapp.com/">
+                            <a target="_blank" rel="noopener noreferrer" href="https://project-3-aristocats.herokuapp.com/" className="pr-2">
                                 <LiveButton />
                             </a>
-                        </Col>
-                        <Col>
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Jmichael96/Social-Animals">
                                 <GithubButton />
                             </a>

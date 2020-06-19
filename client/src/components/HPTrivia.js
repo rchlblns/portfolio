@@ -13,7 +13,7 @@ function TriviaGame() {
                 <Col>
                     <Image src={require("../assets/images/triviagame.gif")} fluid />
                 </Col>
-                <Col>
+                <Col className="my-auto">
                     <Row>
                         <Col>
                             <p>A 10 question, timed Harry Potter trivia game. Players have 30 seconds to chose an answer and following questions are displayed without user input. If the player chooses to replay the game, only the questions are reloaded and not the whole page.</p>
@@ -26,11 +26,9 @@ function TriviaGame() {
                     </Row>
                     <Row>
                         <Col>
-                            <a target="_blank" rel="noopener noreferrer" href="https://rchlblns.github.io/TriviaGame/">
+                            <a target="_blank" rel="noopener noreferrer" href="https://rchlblns.github.io/TriviaGame/" className="pr-2">
                                 <LiveButton />
                             </a>
-                        </Col>
-                        <Col>
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/rchlblns/TriviaGame">
                                 <GithubButton />
                             </a>

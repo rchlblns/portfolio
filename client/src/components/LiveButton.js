@@ -20,11 +20,11 @@ const LiveLinkButton = props => {
 
     return (
         <Button
-        variant="dark"
+        variant="secondary"
         diabled={isLoading}
         onClick={!isLoading ? handleClick : null}
         >
-            {isLoading ? "Loading" : "Live Link"}
+            {isLoading ? "Loading" : "LIVE LINK"}
         </Button>
     );
 }

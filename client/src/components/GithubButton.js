@@ -20,11 +20,11 @@ const GithubButton = props => {
 
     return (
         <Button
-        variant="dark"
+        variant="secondary"
         diabled={isLoading}
         onClick={!isLoading ? handleClick : null}
         >
-            {isLoading ? "Loading" : "Github"}
+            {isLoading ? "Loading" : "GITHUB"}
         </Button>
     );
 }

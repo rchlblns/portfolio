@@ -8,30 +8,30 @@ export default class Navbar extends React.Component {
   render() {
     return (
 
-      <Nav className="col-md-12 d-none d-md-block bg-light sidebar text-center"
+      <Nav className="bg-light text-center flex-column" id="sidebar"
         activeKey="/home">
         <div className="sidebar-sticky"></div>
         
-        <Image src="https://via.placeholder.com/150" id="myPic" roundedCircle />
+        <Image src={require("../assets/images/photo.jpg")} className="d-block mx-auto img-fluid" id="myPic" width={180} roundedCircle />
         
         <Nav.Item>
           <LinkContainer to="/">
-            <Nav.Link>About</Nav.Link>
+            <Nav.Link>ABOUT</Nav.Link>
           </LinkContainer>
         </Nav.Item>
         <Nav.Item>
           <LinkContainer to="/skills">
-            <Nav.Link>Skills</Nav.Link>
+            <Nav.Link>SKILLS</Nav.Link>
           </LinkContainer>
         </Nav.Item>
         <Nav.Item>
           <LinkContainer to="/projects">
-            <Nav.Link>Projects</Nav.Link>
+            <Nav.Link>PROJECTS</Nav.Link>
           </LinkContainer>
         </Nav.Item>
         <Nav.Item>
           <LinkContainer to="/contact">
-            <Nav.Link>Contact</Nav.Link>
+            <Nav.Link>CONTACT</Nav.Link>
           </LinkContainer>
         </Nav.Item>
       </Nav>

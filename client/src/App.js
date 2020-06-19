@@ -20,7 +20,7 @@ export default class App extends React.Component {
             <Col xs={2} id="sidebar-wrapper">
               <Nav />
             </Col>
-            <Col xs={10} id="page-content-wrapper">
+            <Col xs={10} className="my-auto" id="page-content-wrapper">
               <Switch>
                 <Route path="/" exact component={AboutMe} />
                 <Route path="/skills" component={Skills} />

@@ -13,9 +13,8 @@ export default class Projects extends React.Component {
                 <Row>
                     <Col>
                         <h1 className="my-4">
-                            Projects
-                            <br></br>
-                            <small>Click to see more information</small>
+                            PROJECTS
+                            {/* <small>Click to see more information</small> */}
                         </h1>
                         <CardColumns>
                             <Card>

@@ -13,7 +13,7 @@ function Lumikha() {
                 <Col>
                     <Image src={require("../assets/images/lumikha.gif")} fluid />
                 </Col>
-                <Col>
+                <Col className="my-auto">
                     <Row>
                         <Col>
                             <p>This application showcases information about Unipro Texas' 2nd annual Lumikhâ Arts Showcase. I was commissioned to build a digital pamphlet to aid Unipro in their efforts to avoid paper waste and lessen the environmental impact of their event. Included in the application is the schedule, mission statement of the event, sponsor information, a map of the venue, and individual pages linking to more information for each performer and artist. Guests of the event were able to access different information by scanning various QR codes at the venue.</p>
@@ -26,11 +26,9 @@ function Lumikha() {
                     </Row>
                     <Row>
                         <Col>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.lumikhaartsshowcase.com/">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.lumikhaartsshowcase.com/" className="pr-2">
                                 <LiveButton />
                             </a>
-                        </Col>
-                        <Col>
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/rchlblns/lumikha-info">
                                 <GithubButton />
                             </a>

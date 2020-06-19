@@ -13,7 +13,7 @@ function TrainScheduler() {
                 <Col>
                     <Image src={require("../assets/images/trainscheduler.gif")} fluid />
                 </Col>
-                <Col>
+                <Col className="my-auto">
                     <Row>
                         <Col>
                             <p>Train Scheduler provides up to date arrival and departure information for various trains. Users can add trains to the list by filling out the form underneath the table. </p>
@@ -26,11 +26,9 @@ function TrainScheduler() {
                     </Row>
                     <Row>
                         <Col>
-                            <a target="_blank" rel="noopener noreferrer" href="https://rchlblns.github.io/Train-Scheduler/">
+                            <a target="_blank" rel="noopener noreferrer" href="https://rchlblns.github.io/Train-Scheduler/" className="pr-2">
                                 <LiveButton />
                             </a>
-                        </Col>
-                        <Col>
                             <a target="_blank" rel="noopener noreferrer" href="https://rchlblns.github.io/Train-Scheduler/">
                                 <GithubButton />
                             </a>

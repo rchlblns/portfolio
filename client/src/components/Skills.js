@@ -21,9 +21,8 @@ export default class Skills extends React.Component {
             <Container>
                 <Row>
                     <Col>
-                        <h1 className="my-4">Skills
-                        <br></br>
-                        <small>Languages and Tools</small>
+                        <h1 className="my-4">SKILLS
+                        {/* <small>Languages and Tools</small> */}
                         </h1>
                     </Col>
                 </Row>
@@ -42,30 +41,24 @@ export default class Skills extends React.Component {
                             <ListGroup.Item>
                                 <DiJqueryLogo size={100}/>
                             </ListGroup.Item>
-                        </ListGroup>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <ListGroup horizontal>
                             <ListGroup.Item>
                                 <DiNodejsSmall size={100}/>
                             </ListGroup.Item>
                             <ListGroup.Item>
                                 <DiMysql size={100}/>
                             </ListGroup.Item>
-                            <ListGroup.Item>
-                                <DiBootstrap size={100}/>
-                            </ListGroup.Item>
-                            <ListGroup.Item>
-                                <DiMaterializecss size={100} />
-                            </ListGroup.Item>
                         </ListGroup>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <ListGroup horizontal>
+                            <ListGroup.Item>
+                                <DiBootstrap size={100}/>
+                            </ListGroup.Item>
+                            <ListGroup.Item>
+                                <DiMaterializecss size={100} />
+                            </ListGroup.Item>
                             <ListGroup.Item>
                                 <DiPhotoshop size={100}/>
                             </ListGroup.Item>
