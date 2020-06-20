@@ -1,7 +1,11 @@
-    #sidebar {
+  #sidebar {
     margin-left: 0;
     min-height: 100vh !important;
     background-color: #AE7878;
+  }
+
+  img#myPic {
+    border: 2px solid #CCCCCC;
   }
 
   .nav-link {
