@@ -8,8 +8,9 @@ export default class Navbar extends React.Component {
   render() {
     return (
 
-      <Nav className="bg-light text-center flex-column" id="sidebar"
-        activeKey="/home">
+      <Nav className="bg-light text-center flex-column justify-content-center" id="sidebar"
+        activeKey="/home"
+        onSelect={(selectedKey) => console.log(`selected ${selectedKey}`)}>
         <div className="sidebar-sticky"></div>
         
         <Image src={require("../assets/images/photo.jpg")} className="d-block mx-auto img-fluid" id="myPic" width={180} roundedCircle />
