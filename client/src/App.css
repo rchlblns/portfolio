@@ -11,9 +11,10 @@
 h1 {
     font-family: "Source Code Pro", monospace;
     font-size: 70px;
+    color: #B54545;
 }
 
-.nav-item {
+.nav-item, .form-label, p {
     font-family: "Glacial Indifference", sans-serif;
     font-size: 20px;
 }
