@@ -16,6 +16,11 @@ export default class Projects extends React.Component {
                             PROJECTS
                             {/* <small>Click to see more information</small> */}
                         </h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+
                         <CardColumns>
                             <Card>
                                 <LinkContainer to="/projects/lumikha">

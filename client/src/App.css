@@ -21,4 +21,9 @@ h1 {
 
 .list-group-item {
     border: 0;
+    padding-left: 0;
+}
+
+.list-group-horizontal {
+    margin-left: -10px;
 }
