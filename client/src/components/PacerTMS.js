@@ -10,7 +10,7 @@ function PacerTMS() {
                 <Col><h1>Pacer TMS</h1></Col>
             </Row>
             <Row>
-                <Col>
+                <Col className="my-auto">
                     <Image src={require("../assets/images/pacertms.gif")} fluid />
                 </Col>
                 <Col className="my-auto">

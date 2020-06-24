@@ -10,7 +10,7 @@ function Lumikha() {
                 <Col><h1>Lumikha Arts Showcase</h1></Col>
             </Row>
             <Row>
-                <Col>
+                <Col className="my-auto">
                     <Image src={require("../assets/images/lumikha.gif")} fluid />
                 </Col>
                 <Col className="my-auto">
