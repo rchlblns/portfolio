@@ -27,3 +27,8 @@ h1 {
 .list-group-horizontal {
     margin-left: -10px;
 }
+
+img.card-img:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}

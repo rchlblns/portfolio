@@ -20,7 +20,6 @@ export default class Projects extends React.Component {
                 </Row>
                 <Row>
                     <Col>
-
                         <CardColumns>
                             <Card>
                                 <LinkContainer to="/projects/lumikha">
@@ -29,12 +28,12 @@ export default class Projects extends React.Component {
                             </Card>
                             <Card>
                                 <LinkContainer to="/projects/clicky-game">
-                                    <Card.Img src={require("../assets/images/clicky_game.png")} />
+                                    <Card.Img src={require("../assets/images/clicky_game.png")}/>
                                 </LinkContainer>
                             </Card>
                             <Card>
                                 <LinkContainer to="/projects/social-animals">
-                                    <Card.Img src={require("../assets/images/social-animals.png")} />
+                                    <Card.Img src={require("../assets/images/social-animals.png")}/>
                                 </LinkContainer>
                             </Card>
                             <Card>
