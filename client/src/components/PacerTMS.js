@@ -16,7 +16,7 @@ function PacerTMS() {
                 <Col className="my-auto">
                     <Row>
                         <Col>
-                            <p>Pacer Transportation Management System is an application that manages complex inventory systems. It's capabilities range from tracking simple prodcut movement to detailed inventory control, with unique identifiers for each product. This version of the application was created from the perspective of a pipe manufacturer, however the application can be customized to fit any type of TMS need.</p>
+                            <p>Pacer Transportation Management System is an application that manages complex inventory systems. It's capabilities range from tracking simple product movement to detailed inventory control. This version of the application was created from the perspective of a pipe manufacturer, however the application can be customized to fit any type of TMS need.</p>
                         </Col>
                     </Row>
                     <Row>
