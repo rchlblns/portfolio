@@ -14,7 +14,7 @@ h1 {
     color: #B54545;
 }
 
-.nav-item, .form-label, p {
+.nav-link, .form-label, p {
     font-family: "Glacial Indifference", sans-serif;
     font-size: 20px;
 }
@@ -32,3 +32,5 @@ img.card-img:hover {
     opacity: 0.85;
     cursor: pointer;
 }
+
+
