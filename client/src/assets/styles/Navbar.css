@@ -11,7 +11,7 @@
     color: #FFF;
   }
 
-  .nav-link:hover {
+  a.nav-link:hover {
     color: #CCCCCC;
   }
   
@@ -19,5 +19,8 @@
     #sidebar {
       background-color: transparent;
     }
+    /* .navbar-toggler-icon {
+      align;
+    } */
    }
   

@@ -9,8 +9,8 @@ export default class SideNavbar extends React.Component {
   render() {
     return (
 
-      <Navbar expand="lg" id="sidebar">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar collapseOnSelect expand="lg" id="sidebar">
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="flex-column text-center">
             <Image src={require("../assets/images/photo.jpg")} className="img-fluid" id="myPic" width={180} roundedCircle />
