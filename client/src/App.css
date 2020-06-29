@@ -10,22 +10,13 @@
 
 h1 {
     font-family: "Source Code Pro", monospace;
-    font-size: 70px;
+    font-size: 75px;
     color: #B54545;
 }
 
 .nav-link, .form-label, p {
     font-family: "Glacial Indifference", sans-serif;
     font-size: 20px;
-}
-
-.list-group-item {
-    border: 0;
-    padding-left: 0;
-}
-
-.list-group-horizontal {
-    margin-left: -10px;
 }
 
 img.card-img:hover {
@@ -35,16 +26,26 @@ img.card-img:hover {
 
 @media (max-width: 992px) {
     h1 {
-        font-size: 40px;
-        text-align: center;
+        font-size: 4.0em;
+        /* text-align: center; */
     }
 
     .nav-link, .form-label, p {
         font-size: 15px;
     }
 
-    .list-group-item {
-        size: 40px;
+    .react-icons {
+        width: 4.0em;
     }
    }
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 3.5em;
+    }
+
+    .react-icons {
+        width: 3.5em;
+    }
+}
 
