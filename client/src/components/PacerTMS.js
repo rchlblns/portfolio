@@ -10,18 +10,18 @@ function PacerTMS() {
                 <Col><h1>Pacer TMS</h1></Col>
             </Row>
             <Row>
-                <Col className="my-auto">
-                    <Image src={require("../assets/images/pacertms.gif")} fluid />
+                <Col className="my-auto" xl={6}>
+                    <Image className="project-pic" src={require("../assets/images/pacertms.gif")} fluid />
                 </Col>
-                <Col className="my-auto">
+                <Col className="my-auto" xl={6}>
                     <Row>
                         <Col>
-                            <p>Pacer Transportation Management System is an application that manages complex inventory systems. It's capabilities range from tracking simple product movement to detailed inventory control. This version of the application was created from the perspective of a pipe manufacturer, however the application can be customized to fit any type of TMS need.</p>
+                        <p>Built with: HTML5, CSS3, ES6, Bootstrap, BCrypt, Node.js, Express.js, Handlebars.js, MySQL, Sequelize, Passport.js</p>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                            <p>Built with: HTML5, CSS3, ES6, Bootstrap, BCrypt, Node.js, Express.js, Handlebars.js, MySQL, Sequelize, Passport.js</p>
+                            <p>Pacer Transportation Management System is an application that manages complex inventory systems. It's capabilities range from tracking simple product movement to detailed inventory control. This version of the application was created from the perspective of a pipe manufacturer, however the application can be customized to fit any type of TMS need.</p>
                         </Col>
                     </Row>
                     <Row>

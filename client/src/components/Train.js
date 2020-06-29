@@ -10,10 +10,10 @@ function TrainScheduler() {
                 <Col><h1>Train Scheduler</h1></Col>
             </Row>
             <Row>
-                <Col>
-                    <Image src={require("../assets/images/trainscheduler.gif")} fluid />
+                <Col xl={6}>
+                    <Image className="project-pic" src={require("../assets/images/trainscheduler.gif")} fluid />
                 </Col>
-                <Col className="my-auto">
+                <Col className="my-auto" xl={6}>
                     <Row>
                         <Col>
                             <p>Train Scheduler provides up to date arrival and departure information for various trains. Users can add trains to the list by filling out the form underneath the table. </p>

@@ -10,10 +10,10 @@ function Lumikha() {
                 <Col><h1>Lumikha Arts Showcase</h1></Col>
             </Row>
             <Row>
-                <Col className="my-auto">
-                    <Image src={require("../assets/images/lumikha.gif")} fluid />
+                <Col className="my-auto" xl={6}>
+                    <Image className="project-pic" src={require("../assets/images/lumikha.gif")} fluid />
                 </Col>
-                <Col className="my-auto">
+                <Col className="my-auto" xl={6}>
                     <Row>
                         <Col>
                             <p>This application was built to showcase information about Unipro Texas' 2nd annual Lumikhâ Arts Showcase. I was commissioned to build a digital pamphlet to aid Unipro in their efforts to decrease paper waste and lessen the environmental impact of the event. Event attendees were able to utilize QR codes throughout the venue to access information about the event, including artists, performers, and the schedule.</p>

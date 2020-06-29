@@ -10,10 +10,10 @@ function SocialAnimals() {
                 <Col><h1>Social Animals</h1></Col>
             </Row>
             <Row>
-                <Col>
-                    <Image src={require("../assets/images/socialanimals.gif")} fluid />
+                <Col xl={6}>
+                    <Image  className="project-pic" src={require("../assets/images/socialanimals.gif")} fluid />
                 </Col>
-                <Col className="my-auto">
+                <Col className="my-auto" xl={6}>
                     <Row>
                         <Col>
                             <p>Social Animals is a part social networking/part search service application for animal lovers. It aims to reduce the amount of animals that are abandoned or surrendered by providing a support network of animal related information and resources.</p>

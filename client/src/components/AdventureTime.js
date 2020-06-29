@@ -10,10 +10,10 @@ function AdventureTime() {
                 <Col><h1>Adventure Time Clicky Game</h1></Col>
             </Row>
             <Row>
-                <Col>
-                    <Image src={require("../assets/images/clickygame.gif")} fluid />
+                <Col className="my-auto" xl={6}>
+                    <Image className="project-pic" src={require("../assets/images/clickygame.gif")} fluid />
                 </Col>
-                <Col className="my-auto">
+                <Col className="my-auto" xl={6}>
                     <Row>
                         <Col>
                             <p>A memory game where players gain points by NOT clicking on the same picture twice</p>
