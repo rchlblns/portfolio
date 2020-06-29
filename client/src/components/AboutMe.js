@@ -21,16 +21,18 @@ function About() {
                     </p>
                 </Col>
             </Row>
-            <Row className="pt-3">
-                <Col>
-                    
+            <Row className="pt-3" >
+                <Col md="auto" className="pb-2">
                     <a target="_blank" rel="noopener noreferrer" href={Resume} className="pr-4">
                         <Button variant="secondary">VIEW MY RESUME</Button>
                     </a>
-
+                </Col>
+                <Col md="auto" className="pb-2">
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/rchlblns" className="pr-4">
                         <Button variant="secondary">VISIT MY GITHUB <IoLogoGithub /></Button>
                     </a>
+                </Col>
+                <Col md="auto" className="pb-2">
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/richellebillones/">
                         <Button variant="secondary">VISIT MY LINKEDIN <IoLogoLinkedin /></Button>
                     </a>

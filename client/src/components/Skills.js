@@ -22,7 +22,6 @@ export default class Skills extends React.Component {
                 <Row>
                     <Col>
                         <h1 className="my-4">SKILLS
-                        {/* <small>Languages and Tools</small> */}
                         </h1>
                     </Col>
                 </Row>

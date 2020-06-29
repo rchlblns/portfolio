@@ -24,7 +24,7 @@ const LiveLinkButton = props => {
         diabled={isLoading}
         onClick={!isLoading ? handleClick : null}
         >
-            {isLoading ? "Loading" : "LIVE LINK"}
+            {isLoading ? "Loading" : "DEMO"}
         </Button>
     );
 }

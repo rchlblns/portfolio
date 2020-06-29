@@ -1,26 +1,30 @@
   #sidebar {
-    background-color: rgb(176, 109, 109, 0.70);
+    background-color: rgb(176, 109, 109, 0.85);
     min-height: 100vh;
   }
 
-  img#myPic {
+  img#my-pic {
     border: 2px solid #FFFFFF;
   }
 
-  .nav-link {
-    color: #FFF;
+  .navbar-light .navbar-nav a.nav-link {
+    color: #FFFFFF;
   }
 
-  a.nav-link:hover {
-    color: #CCCCCC;
-  }
-  
   @media (max-width: 992px) {
     #sidebar {
       background-color: transparent;
+      min-height: initial;
     }
-    /* .navbar-toggler-icon {
-      align;
-    } */
+    button.navbar-toggler {
+      margin: auto;
+    }
+    img#my-pic {
+      size: 100px;
+    }
+
+    .navbar-light .navbar-nav a.nav-link {
+    color: #000;
+    }
    }
   

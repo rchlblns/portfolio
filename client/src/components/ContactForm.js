@@ -83,7 +83,7 @@ const ContactForm = () => {
                     
                         <Form noValidate onSubmit={handleSubmit}>
                             <Form.Row>
-                                <Form.Group as={Col} controlId="formGridFirstName">
+                                <Form.Group as={Col} md="4" controlId="formGridFirstName">
                                     <Form.Label>First Name</Form.Label>
                                     <Form.Control
                                         type="text"
@@ -99,7 +99,7 @@ const ContactForm = () => {
                                     </Form.Control.Feedback>
                                 </Form.Group>
 
-                                <Form.Group as={Col} controlId="formGridLastName">
+                                <Form.Group as={Col} md="4" controlId="formGridLastName">
                                     <Form.Label>Last Name</Form.Label>
                                     <Form.Control
                                         type="text"
@@ -115,7 +115,7 @@ const ContactForm = () => {
                                     </Form.Control.Feedback>
                                 </Form.Group>
 
-                                <Form.Group as={Col} controlId="formGridEmail">
+                                <Form.Group as={Col}  md="4" controlId="formGridEmail">
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control
                                         type="email"
