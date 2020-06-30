@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router, Switch, Route
 } from "react-router-dom";
 import Nav from "./components/Navbar";
+import MobileNav from "./components/MobileNav";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills"
 import Projects from "./components/Projects";
@@ -17,10 +18,11 @@ export default class App extends React.Component {
       <Router>
         <Container fluid>
           <Row className="align-items-lg-center">
-            <Col xs={3} s={3} md={2} id="sidebar-wrapper">
-              <Nav />
+            <Col xs={2} s={2} md={2} id="sidebar-wrapper">
+              {/* <Nav /> */}
+              <MobileNav />
             </Col>
-            <Col xs={9} s={9} md={10} id="page-content-wrapper">
+            <Col xs={10} s={10} md={10} id="page-content-wrapper">
               <Switch>
                 <Route path="/" exact component={AboutMe} />
                 <Route path="/skills" component={Skills} />

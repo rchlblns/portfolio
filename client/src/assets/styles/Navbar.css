@@ -13,7 +13,7 @@
 
   @media (max-width: 992px) {
     #sidebar {
-      background-color: transparent;
+      /* background-color: transparent; */
       min-height: initial;
     }
     button.navbar-toggler {
