@@ -18,11 +18,15 @@ export default class App extends React.Component {
       <Router>
         <Container fluid>
           <Row className="align-items-lg-center">
-            <Col xs={2} s={2} md={2} id="sidebar-wrapper">
-              {/* <Nav /> */}
-              <MobileNav />
+            <Col xs={3} s={3} md={2} lg={2} id="sidebar-wrapper">
+              <div className="d-lg-none">
+                <MobileNav/>
+              </div>
+              <div className="d-none d-lg-block">
+                <Nav />
+              </div>
             </Col>
-            <Col xs={10} s={10} md={10} id="page-content-wrapper">
+            <Col xs={9} s={9} md={10} lg={10} id="page-content-wrapper">
               <Switch>
                 <Route path="/" exact component={AboutMe} />
                 <Route path="/skills" component={Skills} />

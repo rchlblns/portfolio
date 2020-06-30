@@ -1,5 +1,5 @@
   #sidebar {
-    background-color: rgb(176, 109, 109, 0.85);
+    background-color: #BB8383;
     min-height: 100vh;
   }
 
@@ -9,11 +9,11 @@
 
   .navbar-light .navbar-nav a.nav-link {
     color: #FFFFFF;
+    font-size: 25px;
   }
 
-  @media (max-width: 992px) {
+  /* @media (max-width: 992px) {
     #sidebar {
-      /* background-color: transparent; */
       min-height: initial;
     }
     button.navbar-toggler {
@@ -26,5 +26,5 @@
     .navbar-light .navbar-nav a.nav-link {
     color: #000;
     }
-   }
+   } */
   

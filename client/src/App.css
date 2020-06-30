@@ -24,10 +24,9 @@ img.card-img:hover {
     cursor: pointer;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     h1 {
         font-size: 4.0em;
-        /* text-align: center; */
     }
 
     .nav-link, .form-label, p {
@@ -37,11 +36,11 @@ img.card-img:hover {
     .react-icons {
         width: 4.0em;
     }
-   }
-
+    
    .project-pic {
        padding-bottom: 20px;
    }
+}
 
 @media (max-width: 768px) {
     h1{
@@ -51,5 +50,5 @@ img.card-img:hover {
     .react-icons {
         width: 3.5em;
     }
-}
+} */
 

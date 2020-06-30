@@ -8,11 +8,9 @@ import "../assets/styles/Navbar.css";
 export default class SideNavbar extends React.Component {
   render() {
     return (
-      <Navbar expand="lg" id="sidebar">
-        {/* <Navbar.Toggle aria-controls="mobile-nav"/>
-        <Navbar.Collapse id="mobile-nav"> */}
-          <Nav className="flex-column text-center" id="nav-items">
-            <Image src={require("../assets/images/photo.jpg")} className="img-fluid mb-3" id="my-pic" width={180} roundedCircle />
+      <Navbar id="sidebar">
+          <Nav className="flex-column text-center my-auto mx-auto" id="nav-items">
+            <Image src={require("../assets/images/photo.jpg")} className="img-fluid mx-auto" id="my-pic" width={"200em"} roundedCircle />
             <IndexLinkContainer to="/">
               <Nav.Link>ABOUT</Nav.Link>
             </IndexLinkContainer>
@@ -26,7 +24,6 @@ export default class SideNavbar extends React.Component {
               <Nav.Link>CONTACT</Nav.Link>
             </LinkContainer>
           </Nav>
-        {/* </Navbar.Collapse> */}
       </Navbar>
     );
   }

@@ -38,7 +38,7 @@ const Navigation = () => {
             onStateChange={(state) => ctx.stateChangeHandler(state)}
             width={"100vw"}
         >
-            <Nav className="flex-column text-center" id="nav-items">
+            <Nav className="flex-column text-center" id="mobile-nav-items">
                 <Image src={require("../assets/images/photo.jpg")} className="img-fluid mb-3" id="my-pic" width={180} roundedCircle />
                 <IndexLinkContainer to="/">
                     <Nav.Link onClick={ctx.toggleMenu}>ABOUT</Nav.Link>
