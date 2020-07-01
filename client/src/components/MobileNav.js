@@ -3,6 +3,7 @@ import Menu from "react-burger-menu/lib/menus/slide";
 import Image from "react-bootstrap/Image";
 import { Nav } from "react-bootstrap";
 import { LinkContainer, IndexLinkContainer } from "react-router-bootstrap";
+// import Button from "react-bootstrap/Button";
 import "../assets/styles/MobileNav.css";
 
 const MyContext = React.createContext();
@@ -21,10 +22,10 @@ const MyProvider = (props) => {
     )
 }
 
-const Button = () => {
+const MenuButton = () => {
     const ctx = useContext(MyContext)
     return (
-        <button onClick={ctx.toggleMenu}>Toggle Nav</button>
+        <button className="btn-block" id="mobile-nav-button" onClick={ctx.toggleMenu}>MENU</button>
     )
 }
 
@@ -62,7 +63,9 @@ const MobileNav = () => {
     return (
         <MyProvider>
             <Navigation />
-            <Button />
+            <div id="button-wrapper">
+                <MenuButton />
+            </div>
         </MyProvider>
     );
 }

@@ -61,8 +61,6 @@ export default class Skills extends React.Component {
                             <DiMysql size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                </Row>
-                <Row>
                     <Col xs="auto" id="skill-icon">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiBootstrap size={"6.0em"} />

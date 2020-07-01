@@ -1,5 +1,5 @@
-/* Position and sizing of burger button */
-.bm-burger-button {
+/* Position and sizing of (default) burger button */
+  .bm-burger-button {
     position: fixed;
     width: 36px;
     height: 30px;
@@ -7,6 +7,20 @@
     top: 36px;
   }
   
+  /* Custom button styling */
+  #mobile-nav-button {
+    background-color: rgb(176, 109, 109);  
+    border: none;
+    color: white;
+  }
+
+
+  #button-wrapper {
+    height: 100vh;
+    display: flex;
+    position: fixed;
+  }
+
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
     background: #373a47;
