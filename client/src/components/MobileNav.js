@@ -25,7 +25,7 @@ const MyProvider = (props) => {
 const MenuButton = () => {
     const ctx = useContext(MyContext)
     return (
-        <button className="btn-block" id="mobile-nav-button" onClick={ctx.toggleMenu}>MENU</button>
+        <button className="btn-block" id="mobile-nav-button" onClick={ctx.toggleMenu}><span>MENU</span></button>
     )
 }
 
@@ -39,7 +39,7 @@ const Navigation = () => {
             onStateChange={(state) => ctx.stateChangeHandler(state)}
             width={"100vw"}
         >
-            <Nav className="flex-column text-center" id="mobile-nav-items">
+            <Nav className="text-center" id="mobile-nav-items">
                 <Image src={require("../assets/images/photo.jpg")} className="img-fluid mb-3" id="mobile-pic" width={180} roundedCircle />
                 <IndexLinkContainer to="/">
                     <Nav.Link onClick={ctx.toggleMenu}>ABOUT</Nav.Link>

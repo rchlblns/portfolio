@@ -7,20 +7,6 @@
     top: 36px;
   }
   
-  /* Custom button styling */
-  #mobile-nav-button {
-    background-color: rgb(176, 109, 109);  
-    border: none;
-    color: white;
-  }
-
-
-  #button-wrapper {
-    height: 100vh;
-    display: flex;
-    position: fixed;
-  }
-
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
     background: #373a47;
@@ -55,7 +41,6 @@
   .bm-menu {
     background: rgb(176, 109, 109);
     padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
   }
   
   /* Wrapper for item list */
@@ -74,8 +59,52 @@
     background: rgba(0, 0, 0, 0.3);
   }
 
-  a.nav-link {
-      color: #FFF;
-      /* font-size: 50px; */
+  /* Styling added by me */
+  /* Custom button styling */
+  #mobile-nav-button {
+    background-color: rgb(176, 109, 109);  
+    border: none;
+    color: white;
   }
 
+  #button-wrapper {
+    height: 100vh;
+    display: flex;
+    position: fixed;
+  }
+
+  #mobile-nav-button span {
+    display: inline-block;
+    transform: rotate(-90deg);
+  }
+
+  a.nav-link {
+    color: #FFF;
+  }
+
+  a.nav-link:hover, a.active.nav-link {
+    color: #000;
+  }
+
+  img#mobile-pic {
+    border: 2px solid #FFFFFF;
+  }
+
+
+  @media (max-width: 768px) {
+    a.nav-link {
+      font-size: 4.5em;
+    }
+    img#mobile-pic {
+      width: 18em;
+    }
+  }
+
+  @media (max-width: 575.98px) { 
+    a.nav-link {
+      font-size: 3.2em;
+    }
+    img#mobile-pic {
+      width: 13em;
+    }
+}

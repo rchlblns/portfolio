@@ -1,5 +1,5 @@
   #sidebar {
-    background-color: #BB8383;
+    background-color: #B87A7A;
     min-height: 100vh;
   }
 
@@ -7,10 +7,16 @@
     border: 2px solid #FFFFFF;
   }
 
-  .navbar-light .navbar-nav a.nav-link {
+  .navbar-dark .navbar-nav a.nav-link {
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 24px;
   }
+
+  .navbar-dark .navbar-nav a.active.nav-link {
+    color: #000;
+    font-size: 24px;
+  }
+
 
   /* @media (max-width: 992px) {
     #sidebar {

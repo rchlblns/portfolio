@@ -18,7 +18,7 @@ export default class App extends React.Component {
       <Router>
         <Container fluid>
           <Row>
-            <Col xs={2} s={3} md={2} lg={2.5} id="sidebar-wrapper">
+            <Col xs={2} s={2} md={1.5} lg={2.5} id="sidebar-wrapper">
               <div className="d-lg-none">
                 <MobileNav/>
               </div>
@@ -26,7 +26,7 @@ export default class App extends React.Component {
                 <Nav />
               </div>
             </Col>
-            <Col xs={10} s={9} md={10} lg={9.5} className="d-flex justify-content-center align-items-center" id="page-content-wrapper">          
+            <Col xs={10} s={10} md={10.5} lg={9.5} className="d-flex justify-content-center align-items-center" id="page-content-wrapper">          
               <Switch>
                 <Route path="/" exact component={AboutMe} />
                 <Route path="/skills" component={Skills} />

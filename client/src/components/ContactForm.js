@@ -164,7 +164,7 @@ const ContactForm = () => {
                             </Form.Group>
 
                             <Button
-                                variant="primary"
+                                variant="secondary"
                                 type="submit"
                                 disabled={isSubmitting}
                             >

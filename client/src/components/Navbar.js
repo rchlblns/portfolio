@@ -8,7 +8,7 @@ import "../assets/styles/Navbar.css";
 export default class SideNavbar extends React.Component {
   render() {
     return (
-      <Navbar id="sidebar">
+      <Navbar variant="dark" id="sidebar">
           <Nav className="flex-column text-center my-auto mx-auto" id="nav-items">
             <Image src={require("../assets/images/photo.jpg")} className="img-fluid mx-auto" id="my-pic" width={"200em"} roundedCircle />
             <IndexLinkContainer to="/">
