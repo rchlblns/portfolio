@@ -7,7 +7,7 @@ function Contact() {
         <Container>
             <Row>
                 <Col>
-                    <h1 className="my-4">SAY HEY</h1>
+                    <h1 className="my-4">SAY HELLO</h1>
                 </Col>
             </Row>
             <Row>
