@@ -11,7 +11,7 @@ function About() {
         <Container>
             <Row>
                 <Col>
-                    <h1 className="my-4">ABOUT ME</h1>
+                    <h1 className="my-4">HI! I'M RICHELLE</h1>
                     <p>
                         Blue mountain carajillo saucer caffeine ristretto turkish brewed roast. Flavour caramelization, roast, extraction espresso aroma beans caramelization dark. Robusta, cortado, as sweet, trifecta, con panna irish doppio galão whipped. Blue mountain lungo ut, con panna id, ristretto saucer qui beans carajillo.
                     </p>

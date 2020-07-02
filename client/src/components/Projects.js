@@ -21,32 +21,32 @@ export default class Projects extends React.Component {
                 <Row>
                     <Col>
                         <CardColumns>
-                            <Card>
+                            <Card border="light" className="shadow-sm">
                                 <LinkContainer to="/projects/lumikha">
-                                    <Card.Img src={require("../assets/images/lumikha.png")} />
+                                    <Card.Img src={require("../assets/images/lumikha.png")}/>
                                 </LinkContainer>
                             </Card>
-                            <Card>
+                            <Card border="light" className="shadow-sm">
                                 <LinkContainer to="/projects/clicky-game">
                                     <Card.Img src={require("../assets/images/clicky_game.png")}/>
                                 </LinkContainer>
                             </Card>
-                            <Card>
+                            <Card border="light" className="shadow-sm">
                                 <LinkContainer to="/projects/social-animals">
                                     <Card.Img src={require("../assets/images/social-animals.png")}/>
                                 </LinkContainer>
                             </Card>
-                            <Card>
+                            <Card border="light" className="shadow-sm">
                                 <LinkContainer to="/projects/train-scheduler">
                                     <Card.Img src={require("../assets/images/trainscheduler.png")} />
                                 </LinkContainer>
                             </Card>
-                            <Card>
+                            <Card border="light" className="shadow-sm">
                                 <LinkContainer to="/projects/pacer-tms">
                                     <Card.Img src={require("../assets/images/pacertms.png")} />
                                 </LinkContainer>
                             </Card>
-                            <Card>
+                            <Card border="light" className="shadow-sm">
                                 <LinkContainer to="/projects/trivia-game">
                                     <Card.Img src={require("../assets/images/hptriviagame.png")} />
                                 </LinkContainer>

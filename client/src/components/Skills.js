@@ -34,59 +34,58 @@ export default class Skills extends React.Component {
                             <DiHtml5 size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
-
                             <DiCss3 size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiJavascript1 size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiJqueryLogo size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiNodejsSmall size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiMysql size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <div class="w-100 d-none d-xl-block"></div>
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiBootstrap size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiMaterializecss size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiPhotoshop size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiIllustrator size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiGit size={"6.0em"} />
                         </IconContext.Provider>
                     </Col>
-                    <Col xs="auto" id="skill-icon">
+                    <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiReact size={"6.0em"} />
                         </IconContext.Provider>
