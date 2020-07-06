@@ -6,17 +6,22 @@
 
 .container-fluid {
     padding-left: 0;
+    background-color: #EAECEC;
 }
 
 h1 {
     font-family: "Source Code Pro", monospace;
     font-size: 70px;
-    color: #B54545;
+    color: #D65D71;
 }
 
 a.nav-link, .form-label, p {
     font-family: "Glacial Indifference", sans-serif;
     font-size: 22px;
+}
+
+.form-label, p {
+    color: #3E4042;
 }
 
 img.card-img:hover {
@@ -26,6 +31,17 @@ img.card-img:hover {
 
 #sidebar-wrapper, #page-content-wrapper {
     min-height: 100vh;
+}
+
+button.btn.btn-secondary {
+    background-color: #7ecec6;
+    color:#FFF;
+    border: none;
+}
+
+button.btn.btn-secondary:hover {
+    background-color: #6bafa8;
+    border: none;
 }
 
 @media (max-width: 991.98px) {

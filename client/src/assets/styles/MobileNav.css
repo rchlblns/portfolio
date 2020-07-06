@@ -39,13 +39,13 @@
   
   /* General sidebar styles */
   .bm-menu {
-    background: rgb(176, 109, 109);
+    background: #9D9FA2;
     padding: 2.5em 1.5em 0;
   }
   
   /* Wrapper for item list */
   .bm-item-list {
-    color: #b8b7ad;
+    color: #9D9FA2;
     padding: 0.8em;
   }
   
@@ -62,7 +62,7 @@
   /* Styling added by me */
   /* Custom button styling */
   #mobile-nav-button {
-    background-color: rgb(176, 109, 109);  
+    background-color: #9D9FA2;  
     border: none;
     color: white;
   }
@@ -83,11 +83,11 @@
   }
 
   a.nav-link:hover, a.active.nav-link {
-    color: #000;
+    color: #3E4042;
   }
 
   img#mobile-pic {
-    border: 2px solid #FFFFFF;
+    border: 3.5px solid #FFFFFF;
   }
 
 
