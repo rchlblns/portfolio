@@ -10,34 +10,51 @@ import Skills from "./components/Skills"
 import Projects from "./components/Projects";
 import ProjectDetail from "./components/ProjectDetail";
 import Contact from "./components/Contact";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 // import "./App.css";
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <Router>
+const App = () => {
+  return (
+    <Router>
+      <Route render={({ location }) => (
         <Container fluid>
           <Row>
-            <Col xs={2} s={2} md={1.5} lg={2.5} id="sidebar-wrapper">
+            <Col xs={3} s={2} md={1.5} lg={2} id="sidebar-wrapper">
               <div className="d-lg-none">
-                <MobileNav/>
+                <MobileNav />
               </div>
               <div className="d-none d-lg-block">
                 <Nav />
               </div>
             </Col>
-            <Col xs={10} s={10} md={10.5} lg={9.5} className="d-flex justify-content-center align-items-center" id="page-content-wrapper">          
-              <Switch>
-                <Route path="/" exact component={AboutMe} />
-                <Route path="/skills" component={Skills} />
-                <Route path="/projects" exact component={Projects} />
-                <Route path="/projects/:path" component={ProjectDetail} />
-                <Route path="/contact" component={Contact} />
-              </Switch> 
+            <Col xs={9} s={10} md={10.5} lg={10} id="page-content-wrapper">
+              <TransitionGroup
+                // component={null}
+              >
+                <CSSTransition
+                  key={location.key}
+                  timeout={300}
+                  classNames={"fade"}
+                >
+                  <Row className="d-flex vh-100">
+                    <Col className="my-auto" id="content-div">
+                      <Switch location={location}>
+                        <Route path="/" exact component={AboutMe} />
+                        <Route path="/skills" component={Skills} />
+                        <Route path="/projects" exact component={Projects} />
+                        <Route path="/projects/:path" component={ProjectDetail} />
+                        <Route path="/contact" component={Contact} />
+                      </Switch>
+                    </Col>
+                  </Row>
+                </CSSTransition>
+              </TransitionGroup>
             </Col>
           </Row>
         </Container>
-      </Router>
-    );
-  }
+      )} />
+    </Router>
+  );
 }
+
+export default App;

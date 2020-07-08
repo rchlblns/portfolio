@@ -13,7 +13,7 @@ function About() {
                 <Col>
                     <h1 className="my-4">HI! I'M RICHELLE</h1>
                     <p>
-                        I'm a web developer based in Houston, TX. 
+                        I'm a web developer based in Houston, TX.
                     </p>
 
                     <p>

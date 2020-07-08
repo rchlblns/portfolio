@@ -4,9 +4,16 @@
     src: local("Glacial Indifference"), url(./assets/fonts/Glacial_Indifference/GlacialIndifference-Regular.otf) format("opentype");
 }
 
-.container-fluid {
+
+.container-fluid{
     padding-left: 0;
-    background-color: #EAECEC;
+    /* background-color: #FFF; */
+    background-color:  #EAECEC;
+    overflow-y: auto;
+}
+
+#content-div {
+    background-color:  #EAECEC;
 }
 
 h1 {
@@ -31,6 +38,11 @@ img.card-img:hover {
 
 #sidebar-wrapper, #page-content-wrapper {
     min-height: 100vh;
+    min-height: 100%;
+}
+
+#sidebar-wrapper, #page-content-wrapper o {
+    background-color:  #EAECEC;
 }
 
 button.btn.btn-secondary {
@@ -44,7 +56,33 @@ button.btn.btn-secondary:hover {
     border: none;
 }
 
-@media (max-width: 991.98px) {
+/* Animated Switch Transition */
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+    min-height: 100vh;
+    /* background-color:  #EAECEC; */
+}
+
+.fade-exit {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+    min-height: 100vh;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
     h1 {
         font-size: 6.2em;
     }
@@ -58,7 +96,17 @@ button.btn.btn-secondary:hover {
     }
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 800px) and (max-width: 991px) {
+    h1 {
+        font-size: 3.7em;
+    }
+
+    .react-icons {
+        width: 3.5em;
+    }
+}
+
+@media (max-width: 767px) {
     h1 {
         font-size: 3.7em;
     }
@@ -68,17 +116,17 @@ button.btn.btn-secondary:hover {
     }
 
     .form-label, p {
-        font-size: 1em;
+        font-size: 1.0em;
     }
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 668px) { 
     h1 { 
         font-size: 3.0em;
     }
 
     .react-icons {
-        width: 3em;
+        width: 3.0em;
     }
 
     .form-label, p {
