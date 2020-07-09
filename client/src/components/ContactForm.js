@@ -9,6 +9,7 @@ import Spinner from "react-bootstrap/Spinner";
 import { toast, Slide } from "react-toastify";
 import { BsCheck } from "react-icons/bs";
 import "react-toastify/dist/ReactToastify.css";
+import "../assets/styles/Toast.css";
 
 
 
@@ -55,10 +56,13 @@ const ContactForm = () => {
                 })
                     .then(response => {
                         // alert("Message sent");
-                        toast.success("Form submitted.Thanks!", {
+                        toast.dark("Form submitted.Thanks!", {
                             position: "bottom-center",
                             autoClose: 1800,
-                            transition: Slide
+                            transition: Slide,
+                            draggable: false,
+                            closeOnClick: true,
+                            pauseOnHover: false,
                         });
                         setSubmitting(false);
                         resetForm();
