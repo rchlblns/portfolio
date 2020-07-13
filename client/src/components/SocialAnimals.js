@@ -8,6 +8,7 @@ function SocialAnimals() {
         <Container>
             <Row>
                 <Col><h1>Social Animals</h1></Col>
+                <Col xs={12}><div class="divider"><span></span></div></Col>
             </Row>
             <Row>
                 <Col xl={6}>

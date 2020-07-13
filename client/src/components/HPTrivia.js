@@ -8,6 +8,7 @@ function TriviaGame() {
         <Container>
             <Row>
                 <Col><h1>Trivia Game</h1></Col>
+                <Col xs={12}><div class="divider"><span></span></div></Col>
             </Row>
             <Row>
                 <Col xl={6}>

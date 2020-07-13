@@ -8,6 +8,7 @@ function PacerTMS() {
         <Container>
             <Row>
                 <Col><h1>Pacer TMS</h1></Col>
+                <Col xs={12}><div class="divider"><span></span></div></Col>
             </Row>
             <Row>
                 <Col className="my-auto" xl={6}>

@@ -56,7 +56,7 @@ const ContactForm = () => {
                 })
                     .then(response => {
                         // alert("Message sent");
-                        toast.dark("Form submitted.Thanks!", {
+                        toast.dark("Form submitted. Thanks!", {
                             position: "bottom-center",
                             autoClose: 1800,
                             transition: Slide,

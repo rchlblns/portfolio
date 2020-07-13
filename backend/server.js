@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const nodeMailer = require("nodemailer");
 const cors = require("cors");
-const dotenv = require("dotenv").config( { path: "../.env"} );
+const dotenv = require("dotenv").config({ path: "../.env" });
 const port = process.env.PORT || 3030;
 
 app.use(cors());
@@ -18,14 +18,39 @@ app.use((req, res, next) => {
 
 // let appURL = "http://localhost:3000/contact/send";
 
-const transporter = nodeMailer.createTransport({
-    host: "smtp.ethereal.email",
-    port: "587",
-    auth: {
-        user: process.env.TEST_EMAIL,
-        pass: process.env.TEST_PS
+let mailConfig;
+
+if (process.env.NODE_ENV === "production") {
+    mailConfig = {
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: true,
+        auth: {
+            user: process.env.REAL_EMAIL,
+            pass: process.env.REAL_PS
+        }
     }
-});
+} else {
+    mailConfig = {
+        host: "smtp.ethereal.email",
+        port: 587,
+        auth: {
+            user: process.env.TEST_EMAIL,
+            pass: process.env.TEST_PS
+        }
+    }
+}
+
+let transporter = nodeMailer.createTransport(mailConfig);
+
+// const transporter = nodeMailer.createTransport({
+//     host: "smtp.ethereal.email",
+//     port: "587",
+//     auth: {
+//         user: process.env.TEST_EMAIL,
+//         pass: process.env.TEST_PS
+//     }
+// });
 
 transporter.verify((error, success) => {
     if (error) {

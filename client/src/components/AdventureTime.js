@@ -8,6 +8,7 @@ function AdventureTime() {
         <Container>
             <Row>
                 <Col><h1>Adventure Time Clicky Game</h1></Col>
+                <Col xs={12}><div class="divider"><span></span></div></Col>
             </Row>
             <Row>
                 <Col className="my-auto" xl={6}>
@@ -16,7 +17,7 @@ function AdventureTime() {
                 <Col className="my-auto" xl={6}>
                     <Row>
                         <Col>
-                            <p>A memory game where players gain points by NOT clicking on the same picture twice</p>
+                            <p>A memory game where players gain points by not clicking on the same picture twice</p>
                         </Col>
                     </Row>
                     <Row>

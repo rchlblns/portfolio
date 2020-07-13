@@ -7,10 +7,11 @@ function Contact() {
         <Container>
             <Row>
                 <Col>
-                    <h1 className="my-4">SAY HELLO</h1>
+                    <h1>SAY HELLO</h1>
+                    <div class="divider"><span></span></div>
                 </Col>
             </Row>
-            <Row>
+            <Row className="pt-2">
                 <Col>
                     <ContactForm />
                 </Col>

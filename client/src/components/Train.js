@@ -8,6 +8,7 @@ function TrainScheduler() {
         <Container>
             <Row>
                 <Col><h1>Train Scheduler</h1></Col>
+                <Col xs={12}><div class="divider"><span></span></div></Col>
             </Row>
             <Row>
                 <Col xl={6}>

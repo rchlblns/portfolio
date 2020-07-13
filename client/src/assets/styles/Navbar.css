@@ -1,10 +1,10 @@
   #sidebar {
-    background-color:#9D9FA2;
+    background-color: rgb(174, 120, 120, 0.9);
     min-height: 100vh;
   }
 
   img#my-pic {
-    border: 3.5px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
   }
 
   .navbar-dark .navbar-nav a.nav-link {
@@ -13,7 +13,7 @@
   }
 
   .navbar-dark .navbar-nav a.active.nav-link {
-    color: #3E4042;
+    color: #28292b;
     font-size: 24px;
   }
 

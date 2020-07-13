@@ -8,6 +8,7 @@ function Lumikha() {
         <Container>
             <Row>
                 <Col><h1>Lumikha Arts Showcase</h1></Col>
+                <Col xs={12}><div class="divider"><span></span></div></Col>
             </Row>
             <Row>
                 <Col className="my-auto" xl={6}>

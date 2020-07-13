@@ -24,11 +24,11 @@ export default class Skills extends React.Component {
             <Container>
                 <Row>
                     <Col>
-                        <h1 className="my-4">SKILLS
-                        </h1>
+                        <h1>SKILLS</h1>
+                        <div class="divider"><span></span></div>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="pt-2">
                     <Col xs="auto">
                         <IconContext.Provider value={{ className: "react-icons" }}>
                             <DiHtml5 size={"6.0em"} />
