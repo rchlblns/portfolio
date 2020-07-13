@@ -16,6 +16,8 @@ app.use((req, res, next) => {
     next();
 });
 
+// app.use(express.static("../client/build"));
+
 // let appURL = "http://localhost:3000/contact/send";
 
 let mailConfig;
