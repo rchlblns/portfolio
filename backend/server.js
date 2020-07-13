@@ -93,12 +93,14 @@ app.post("/api/send", (req, res) => {
     })
 });
 
-// Serve static files from the React frontend app
-app.use(express.static(path.join(__dirname, "../client/build")));
-
-// Any route that doesn't match what's above, send back index.html
-app.get("*", (req,res) => {
-    res.sendFile(path.join(__dirname + "/../client/build/index.html"))
-});
+if (process.env.NODE_ENV === "production") {
+    // Serve static files from the React frontend app
+    app.use(express.static(path.join(__dirname, "../client/build")));
+    
+    // Any route that doesn't match what's above, send back index.html
+    app.get("*", (req,res) => {
+        res.sendFile(path.join(__dirname, "../client/build", "index.html"))
+    });
+}
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
