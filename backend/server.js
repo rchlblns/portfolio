@@ -23,9 +23,10 @@ let mailConfig;
 
 if (process.env.NODE_ENV === "production") {
     mailConfig = {
-        host: "smtp.gmail.com",
+        service: "gmail",
+        // host: "smtp.gmail.com",
         port: 587,
-        secure: true,
+        // secure: false,
         auth: {
             user: process.env.REAL_EMAIL,
             pass: process.env.REAL_PS
@@ -76,7 +77,7 @@ app.post("/api/send", (req, res) => {
 
     let mail = {
         from: name,
-        to: process.env.TEST_EMAIL,
+        to: process.env.REAL_EMAIL,
         subject: "New message from Portfolio contact form",
         text: content
     }
@@ -94,16 +95,13 @@ app.post("/api/send", (req, res) => {
     })
 });
 
+// Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, "../client/build")))
 
-// if (process.env.NODE_ENV === "production") {
-    // Serve static files from the React frontend app
-    // app.use(express.static(path.join(__dirname, "../client/build")));
-    
-    // Any route that doesn't match what's above, send back index.html
-    app.get("*", (req,res) => {
-        res.sendFile(path.join(__dirname = "../client/build/index.html"))
-    });
+// Any route that doesn't match what's above, send back index.html
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 // }
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
