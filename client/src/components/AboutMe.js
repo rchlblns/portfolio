@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { IoIosPaper, IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
@@ -14,7 +14,7 @@ function About() {
                     <h1 className="">HI, I'M RICHELLE!</h1>
                     <div class="divider"><span></span></div>
                     <p className="pt-2">
-                        I'm a web designer and developer based in Houston, TX 🤘
+                        I'm a web designer and developer based in Houston, TX <span role="img" aria-label="rock">🤘</span>
                     </p>
 
                     <p>

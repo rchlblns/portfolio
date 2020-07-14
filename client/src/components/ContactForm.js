@@ -7,7 +7,6 @@ import * as yup from "yup";
 import axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
 import { toast, Slide } from "react-toastify";
-import { BsCheck } from "react-icons/bs";
 import "react-toastify/dist/ReactToastify.css";
 import "../assets/styles/Toast.css";
 

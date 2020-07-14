@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const nodeMailer = require("nodemailer");
 const cors = require("cors");
 const dotenv = require("dotenv").config({ path: "../.env" });
+const path = require("path");
 const port = process.env.PORT || 3030;
 
 app.use(cors());
@@ -93,14 +94,16 @@ app.post("/api/send", (req, res) => {
     })
 });
 
-if (process.env.NODE_ENV === "production") {
+app.use(express.static(path.join(__dirname, "../client/build")))
+
+// if (process.env.NODE_ENV === "production") {
     // Serve static files from the React frontend app
-    app.use(express.static(path.join(__dirname, "../client/build")));
+    // app.use(express.static(path.join(__dirname, "../client/build")));
     
     // Any route that doesn't match what's above, send back index.html
     app.get("*", (req,res) => {
-        res.sendFile(path.join(__dirname, "../client/build", "index.html"))
+        res.sendFile(path.join(__dirname = "../client/build/index.html"))
     });
-}
+// }
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, useParams, useRouteMatch } from "react-router-dom";
-import Projects from "./Projects";
+import {Switch, Route} from "react-router-dom";
 import Lumikha from "./Lumikha";
 import SocialAnimals from "./SocialAnimals";
 import AdventureTime from "./AdventureTime";
