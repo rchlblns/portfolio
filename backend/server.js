@@ -23,8 +23,8 @@ let mailConfig;
 
 if (process.env.NODE_ENV === "production") {
     mailConfig = {
-        service: "gmail",
-        // host: "smtp.gmail.com",
+        // service: "gmail",
+        host: "smtp.gmail.com",
         port: 587,
         // secure: false,
         auth: {

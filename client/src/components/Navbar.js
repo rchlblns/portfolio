@@ -18,7 +18,7 @@ export default class SideNavbar extends React.Component {
               <Nav.Link>SKILLS</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/projects">
-              <Nav.Link>PROJECT</Nav.Link>
+              <Nav.Link>WORK</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/contact">
               <Nav.Link>CONTACT</Nav.Link>

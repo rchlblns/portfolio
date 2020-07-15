@@ -11,7 +11,7 @@ export default class Projects extends React.Component {
             <Container>
                 <Row>
                     <Col>
-                        <h1>PROJECTS</h1>
+                        <h1>MY WORK</h1>
                         <div class="divider"><span></span></div>
                     </Col>
                 </Row>

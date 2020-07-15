@@ -24,7 +24,7 @@ export default class Skills extends React.Component {
             <Container>
                 <Row>
                     <Col>
-                        <h1>SKILLS</h1>
+                        <h1>MY SKILLS</h1>
                         <div class="divider"><span></span></div>
                     </Col>
                 </Row>

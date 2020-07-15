@@ -88,6 +88,11 @@ button.btn.btn-secondary {
     min-height: 100vh;
 }
 
+#resume-btn, #linkedin-btn, #github-btn {
+    border-radius: 50px;
+    width: 3em;
+    height: 3em;
+}
 /* .project-pic, .project-card {
     border-radius: 5px;
 } */

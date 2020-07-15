@@ -48,7 +48,7 @@ const Navigation = () => {
                     <Nav.Link onClick={ctx.toggleMenu}>SKILLS</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/projects">
-                    <Nav.Link onClick={ctx.toggleMenu}>PROJECT</Nav.Link>
+                    <Nav.Link onClick={ctx.toggleMenu}>WORK</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/contact">
                     <Nav.Link onClick={ctx.toggleMenu}>CONTACT</Nav.Link>
