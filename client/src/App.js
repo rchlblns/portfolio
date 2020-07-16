@@ -19,7 +19,7 @@ const App = () => {
       <Route render={({ location }) => (
         <Container fluid>
           <Row>
-            <Col xs={3} s={2} md={1.5} lg={2} id="sidebar-wrapper">
+            <Col xs={3} s={2} md={1.5} lg={2} xl={2}id="sidebar-wrapper">
               <div className="d-lg-none">
                 <MobileNav />
               </div>
@@ -27,7 +27,7 @@ const App = () => {
                 <Nav />
               </div>
             </Col>
-            <Col xs={9} s={10} md={10.5} lg={10} id="page-content-wrapper">
+            <Col xs={9} s={10} md={10.5} lg={10} xl={10}id="page-content-wrapper">
               <TransitionGroup
                 // component={null}
               >

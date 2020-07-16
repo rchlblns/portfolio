@@ -4,9 +4,8 @@
     src: local("Glacial Indifference"), url(./assets/fonts/Glacial_Indifference/GlacialIndifference-Regular.otf) format("opentype");
 }
 
-.container-fluid{
+.container-fluid {
     padding-left: 0;
-    /* background-color: #FFF; */
     background-color:  #F3F5F4;
     overflow-y: auto;
 }
@@ -64,7 +63,6 @@ button.btn.btn-secondary {
 }
 
 /* Animated Switch Transition */
-
 .fade-enter {
     opacity: 0;
     z-index: 1;
@@ -74,7 +72,6 @@ button.btn.btn-secondary {
     opacity: 1;
     transition: opacity 320ms ease-in;
     min-height: 100vh;
-    /* background-color:  #EAECEC; */
 }
 
 .fade-exit {
@@ -93,11 +90,29 @@ button.btn.btn-secondary {
     width: 3em;
     height: 3em;
 }
-/* .project-pic, .project-card {
-    border-radius: 5px;
-} */
 
-/* Media Queries */
+/* MEDIA QUERIES */
+@media (min-width: 1600px) {
+    h1 {
+        font-size: 7em;
+    }
+
+    .react-icons {
+        width: 7em;
+        height: 7em;
+    }
+
+    .form-label, p {
+        font-size: 2em;
+    }
+
+    #resume-btn, #linkedin-btn, #github-btn {
+        border-radius: 50px;
+        width: 4em;
+        height: 4em;
+    }
+}
+
 @media (max-width: 992px) {
     h1 {
         font-size: 6.2em;
