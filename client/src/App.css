@@ -141,6 +141,10 @@ button.btn.btn-secondary {
 }
 
 @media (max-width: 767px) {
+    body {
+        overflow-y: auto;
+    }
+
     h1 {
         font-size: 3.7em;
     }
@@ -155,6 +159,10 @@ button.btn.btn-secondary {
 }
 
 @media (max-width: 668px) { 
+    body {
+        overflow-y: auto;
+    }
+    
     h1 { 
         font-size: 3.0em;
     }
