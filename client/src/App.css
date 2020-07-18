@@ -7,7 +7,7 @@
 .container-fluid {
     padding-left: 0;
     background-color:  #F3F5F4;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .divider {
@@ -94,16 +94,16 @@ button.btn.btn-secondary {
 /* MEDIA QUERIES */
 @media (min-width: 1600px) {
     h1 {
-        font-size: 7em;
+        font-size: 6.5em;
     }
 
     .react-icons {
-        width: 7em;
-        height: 7em;
+        width: 6.3em;
+        height: 6.3em;
     }
 
     .form-label, p {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     #resume-btn, #linkedin-btn, #github-btn {
