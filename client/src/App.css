@@ -4,15 +4,12 @@
     src: local("Glacial Indifference"), url(./assets/fonts/Glacial_Indifference/GlacialIndifference-Regular.otf) format("opentype");
 }
 
-html {
-    margin-left: calc(100vw - 100%);
+body {
+    overflow-x: hidden;
 }
-
 .container-fluid {
     padding-left: 0;
     background-color:  #F3F5F4;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 .divider {
@@ -113,8 +110,8 @@ button.btn.btn-secondary {
 
     #resume-btn, #linkedin-btn, #github-btn {
         border-radius: 50px;
-        width: 4em;
-        height: 4em;
+        width: 3.8em;
+        height: 3.8em;
     }
 }
 
