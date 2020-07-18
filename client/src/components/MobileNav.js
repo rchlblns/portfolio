@@ -40,7 +40,7 @@ const Navigation = () => {
             width={"100vw"}
         >
             <Nav className="text-center" id="mobile-nav-items">
-                <Image src={require("../assets/images/photo.jpg")} className="img-fluid mb-3" id="mobile-pic" width={180} roundedCircle />
+                <Image src={require("../assets/images/photo.jpg")} alt="Photo of Richelle" className="img-fluid mb-3" id="mobile-pic" width={180} roundedCircle />
                 <IndexLinkContainer to="/">
                     <Nav.Link onClick={ctx.toggleMenu}>ABOUT</Nav.Link>
                 </IndexLinkContainer>

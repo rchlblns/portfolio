@@ -20,32 +20,32 @@ export default class Projects extends React.Component {
                         <CardColumns >
                             <Card border="light" className="shadow-sm project-card">
                                 <LinkContainer to="/projects/lumikha">
-                                    <Card.Img src={require("../assets/images/lumikha.png")} className="project-pic"/>
+                                    <Card.Img src={require("../assets/images/lumikha.png")} alt="Lumikha" className="project-pic"/>
                                 </LinkContainer>
                             </Card>
                             <Card border="light" className="shadow-sm project-card mt-2">
                                 <LinkContainer to="/projects/clicky-game">
-                                    <Card.Img src={require("../assets/images/clicky_game.png")} className="project-pic"/>
+                                    <Card.Img src={require("../assets/images/clicky_game.png")} alt="Clicky Game"className="project-pic"/>
                                 </LinkContainer>
                             </Card>
                             <Card border="light" className="shadow-sm project-card">
                                 <LinkContainer to="/projects/social-animals">
-                                    <Card.Img src={require("../assets/images/social-animals.png")} className="project-pic"/>
+                                    <Card.Img src={require("../assets/images/social-animals.png")} alt="Social Animals"className="project-pic"/>
                                 </LinkContainer>
                             </Card>
                             <Card border="light" className="shadow-sm project-card mt-2">
                                 <LinkContainer to="/projects/train-scheduler">
-                                    <Card.Img src={require("../assets/images/trainscheduler.png")} className="project-pic" />
+                                    <Card.Img src={require("../assets/images/trainscheduler.png")} alt="Train Scheduler" className="project-pic" />
                                 </LinkContainer>
                             </Card>
                             <Card border="light" className="shadow-sm project-card">
                                 <LinkContainer to="/projects/pacer-tms">
-                                    <Card.Img src={require("../assets/images/pacertms.png")} className="project-pic" />
+                                    <Card.Img src={require("../assets/images/pacertms.png")} alt="Pacer TMS" className="project-pic" />
                                 </LinkContainer>
                             </Card>
                             <Card border="light" className="shadow-sm project-card mt-2">
                                 <LinkContainer to="/projects/trivia-game">
-                                    <Card.Img src={require("../assets/images/hptriviagame.png")} className="project-pic" />
+                                    <Card.Img src={require("../assets/images/hptriviagame.png")} alt="Harry Potter Trivia Game" className="project-pic" />
                                 </LinkContainer>
                             </Card>
                         </CardColumns>

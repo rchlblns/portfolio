@@ -10,7 +10,7 @@ export default class SideNavbar extends React.Component {
     return (
       <Navbar variant="dark" id="sidebar">
           <Nav className="flex-column text-center my-auto mx-auto" id="nav-items">
-            <Image src={require("../assets/images/photo.jpg")} className="img-fluid mx-auto mb-2 shadow" id="my-pic" width={"180em"} roundedCircle />
+            <Image src={require("../assets/images/photo.jpg")} alt="Photo of Richelle" className="img-fluid mx-auto mb-2 shadow" id="my-pic"width={"180em"} roundedCircle />
             <IndexLinkContainer to="/">
               <Nav.Link>ABOUT</Nav.Link>
             </IndexLinkContainer>

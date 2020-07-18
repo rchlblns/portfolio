@@ -6,11 +6,12 @@
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 .container-fluid {
     padding-left: 0;
     background-color:  #F3F5F4;
+    overflow-y: auto;
 }
 
 .divider {
@@ -96,6 +97,10 @@ button.btn.btn-secondary {
 
 /* MEDIA QUERIES */
 @media (min-width: 1600px) {
+    body {
+        overflow-y: hidden;
+    }
+
     h1 {
         font-size: 6.5em;
     }
@@ -141,10 +146,6 @@ button.btn.btn-secondary {
 }
 
 @media (max-width: 767px) {
-    body {
-        overflow-y: auto;
-    }
-
     h1 {
         font-size: 3.7em;
     }
@@ -159,10 +160,6 @@ button.btn.btn-secondary {
 }
 
 @media (max-width: 668px) { 
-    body {
-        overflow-y: auto;
-    }
-    
     h1 { 
         font-size: 3.0em;
     }
@@ -174,4 +171,4 @@ button.btn.btn-secondary {
     .form-label, p {
         font-size: 1.0em;
     }
- }
+}
