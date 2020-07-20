@@ -2,6 +2,7 @@
     font-family: "Glacial Indifference";
     font-style: normal;
     src: local("Glacial Indifference"), url(./assets/fonts/Glacial_Indifference/GlacialIndifference-Regular.otf) format("opentype");
+    font-display: swap;
 }
 
 body {
