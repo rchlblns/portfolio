@@ -22,7 +22,7 @@ function SocialAnimals() {
                     </Row>
                     <Row>
                         <Col>
-                            <p>Built with: Create React App, Material Design for Bootstrap, MongoDB, Mongoose.js, Passport.js, Axios, Express.js, BCrypt, Node.js</p>
+                            <p>Create React App | Material Design for Bootstrap | MongoDB | Mongoose.js | Passport.js | Axios | Express.js | BCrypt | Node.js</p>
                         </Col>
                     </Row>
                     <Row>

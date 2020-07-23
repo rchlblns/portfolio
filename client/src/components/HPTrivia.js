@@ -22,7 +22,7 @@ function TriviaGame() {
                     </Row>
                     <Row>
                         <Col>
-                            <p>Built with: HTML5, CSS3, Twitter Bootstrap, ES5, jQuery, Google Fonts</p>
+                            <p>HTML5 | CSS3 | Bootstrap | ES5 | jQuery</p>
                         </Col>
                     </Row>
                     <Row>

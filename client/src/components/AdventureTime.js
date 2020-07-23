@@ -22,7 +22,7 @@ function AdventureTime() {
                     </Row>
                     <Row>
                         <Col>
-                            <p>Built with: Create React App, HTML5, CSS3, ES6, Bootstrap, Google Fonts</p>
+                            <p>Create React App | HTML5 | CSS3 | ES6 | Bootstrap</p>
                         </Col>
                     </Row>
                     <Row>

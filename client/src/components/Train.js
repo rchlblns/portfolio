@@ -22,7 +22,7 @@ function TrainScheduler() {
                     </Row>
                     <Row>
                         <Col>
-                            <p>Built with: HTML5, CSS3, Twitter Boostrap, ES5, jQuery, Google Fonts, Firebase, Moment,js</p>
+                            <p>HTML5 | CSS3 | Bootstrap | ES5 | jQuery | Firebase | Moment.js</p>
                         </Col>
                     </Row>
                     <Row>

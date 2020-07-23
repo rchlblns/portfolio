@@ -17,12 +17,12 @@ function PacerTMS() {
                 <Col className="my-auto" xl={6}>
                     <Row>
                         <Col>
-                        <p>Built with: HTML5, CSS3, ES6, Bootstrap, BCrypt, Node.js, Express.js, Handlebars.js, MySQL, Sequelize, Passport.js</p>
+                            <p>Pacer Transportation Management System is an application that manages complex inventory systems. It's capabilities range from tracking simple product movement to detailed inventory control. This version of the application was created from the perspective of a pipe manufacturer, however the application can be customized to fit any type of TMS need.</p>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                            <p>Pacer Transportation Management System is an application that manages complex inventory systems. It's capabilities range from tracking simple product movement to detailed inventory control. This version of the application was created from the perspective of a pipe manufacturer, however the application can be customized to fit any type of TMS need.</p>
+                        <p>HTML5 | CSS3 | ES6 | Bootstrap | BCrypt | Node.js | Express.js | Handlebars.js | MySQL | Sequelize | Passport.js</p>
                         </Col>
                     </Row>
                     <Row>

@@ -22,7 +22,7 @@ function Lumikha() {
                     </Row>
                     <Row>
                         <Col>
-                            <p>Built with: HTML5, CSS3, ES6, Materialize CSS</p>
+                            <p>HTML5 | CSS3 | ES6 | Materialize CSS</p>
                         </Col>
                     </Row>
                     <Row>
