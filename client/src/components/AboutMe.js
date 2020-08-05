@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { IoIosPaper, IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
-import Resume from "../assets/images/UpdatedResume.pdf";
+import Resume from "../assets/images/Resume.pdf";
 
 
 function About() {
