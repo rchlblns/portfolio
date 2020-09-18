@@ -27,7 +27,7 @@ function Lumikha() {
                     </Row>
                     <Row>
                         <Col>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.lumikhaartsshowcase.com/" className="pr-2">
+                            <a target="_blank" rel="noopener noreferrer" href="https://rchlblns.github.io/lumikha-info/" className="pr-2">
                                 <LiveButton />
                             </a>
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/rchlblns/lumikha-info">

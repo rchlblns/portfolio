@@ -17,7 +17,7 @@ function TrainScheduler() {
                 <Col className="my-auto" xl={6}>
                     <Row>
                         <Col>
-                            <p>Train Scheduler provides up to date arrival and departure information for various trains. Users can add trains to the list by filling out the form underneath the table. </p>
+                            <p>Train Scheduler provides up to date arrival and departure information for various trains. Users can add trains to the list by filling out the form underneath the table.</p>
                         </Col>
                     </Row>
                     <Row>
@@ -30,7 +30,7 @@ function TrainScheduler() {
                             <a target="_blank" rel="noopener noreferrer" href="https://rchlblns.github.io/Train-Scheduler/" className="pr-2">
                                 <LiveButton />
                             </a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://rchlblns.github.io/Train-Scheduler/">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/rchlblns/Train-Scheduler">
                                 <GithubButton />
                             </a>
                         </Col>
