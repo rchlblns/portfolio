@@ -5,7 +5,7 @@
     "scripts": {
         "client": "cd client && yarn start",
         "server": "cd backend && yarn start",
-        "dev": "concurrently -- kill-others-on-fail \"yarn server\" \"yarn client\"",
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
         "start": "cd backend && node server.js",
         "heroku-postbuild": "cd client && yarn install && yarn run build"
     },
